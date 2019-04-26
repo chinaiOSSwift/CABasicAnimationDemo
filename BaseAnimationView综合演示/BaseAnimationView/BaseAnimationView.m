@@ -6,6 +6,22 @@
 //  Copyright © 2019 KOCHIAEE6. All rights reserved.
 //
 
+/**
+ 属性    说明
+ duration    动画的时长
+ repeatCount    重复的次数。不停重复设置为 HUGE_VALF
+ repeatDuration    设置动画的时间。在该时间内动画一直执行，不计次数。
+ beginTime    指定动画开始的时间。从开始延迟几秒的话，设置为【CACurrentMediaTime() + 秒数】 的方式
+ timingFunction    设置动画的速度变化
+ autoreverses    动画结束时是否执行逆动画
+ fromValue    所改变属性的起始值
+ toValue    所改变属性的结束时的值
+ byValue    所改变属性相同起始值的改变量
+ 
+ */
+
+
+
 #import "BaseAnimationView.h"
 #import "AnimationModel.h"
 
