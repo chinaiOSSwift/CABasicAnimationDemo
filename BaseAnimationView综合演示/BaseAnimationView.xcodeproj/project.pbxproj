@@ -15,6 +15,8 @@
 		FA1B35D8227292D700F26171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1B35D7227292D700F26171 /* main.m */; };
 		FA1B35E02272936400F26171 /* BaseAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1B35DF2272936400F26171 /* BaseAnimationView.m */; };
 		FA1B35E3227294E000F26171 /* AnimationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1B35E2227294E000F26171 /* AnimationModel.m */; };
+		FA1B35E62272986600F26171 /* SpringAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1B35E52272986600F26171 /* SpringAnimationView.m */; };
+		FA1B35E9227298CC00F26171 /* UIView+HPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1B35E8227298CC00F26171 /* UIView+HPAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,11 @@
 		FA1B35DF2272936400F26171 /* BaseAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAnimationView.m; sourceTree = "<group>"; };
 		FA1B35E1227294E000F26171 /* AnimationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationModel.h; sourceTree = "<group>"; };
 		FA1B35E2227294E000F26171 /* AnimationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationModel.m; sourceTree = "<group>"; };
+		FA1B35E42272986600F26171 /* SpringAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpringAnimationView.h; sourceTree = "<group>"; };
+		FA1B35E52272986600F26171 /* SpringAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpringAnimationView.m; sourceTree = "<group>"; };
+		FA1B35E7227298CC00F26171 /* UIView+HPAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HPAdditions.h"; sourceTree = "<group>"; };
+		FA1B35E8227298CC00F26171 /* UIView+HPAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HPAdditions.m"; sourceTree = "<group>"; };
+		FA1B35EA22729ACE00F26171 /* ProjectPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,11 @@
 				FA1B35CC227292D500F26171 /* ViewController.m */,
 				FA1B35DE2272936400F26171 /* BaseAnimationView.h */,
 				FA1B35DF2272936400F26171 /* BaseAnimationView.m */,
+				FA1B35EA22729ACE00F26171 /* ProjectPrefixHeader.pch */,
+				FA1B35E42272986600F26171 /* SpringAnimationView.h */,
+				FA1B35E52272986600F26171 /* SpringAnimationView.m */,
+				FA1B35E7227298CC00F26171 /* UIView+HPAdditions.h */,
+				FA1B35E8227298CC00F26171 /* UIView+HPAdditions.m */,
 				FA1B35E1227294E000F26171 /* AnimationModel.h */,
 				FA1B35E2227294E000F26171 /* AnimationModel.m */,
 				FA1B35CE227292D500F26171 /* Main.storyboard */,
@@ -151,7 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1B35E62272986600F26171 /* SpringAnimationView.m in Sources */,
 				FA1B35E02272936400F26171 /* BaseAnimationView.m in Sources */,
+				FA1B35E9227298CC00F26171 /* UIView+HPAdditions.m in Sources */,
 				FA1B35CD227292D500F26171 /* ViewController.m in Sources */,
 				FA1B35D8227292D700F26171 /* main.m in Sources */,
 				FA1B35CA227292D500F26171 /* AppDelegate.m in Sources */,
@@ -299,6 +313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 336PLTJ2V2;
+				GCC_PREFIX_HEADER = "${SRCROOT}/BaseAnimationView/ProjectPrefixHeader.pch";
 				INFOPLIST_FILE = BaseAnimationView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 336PLTJ2V2;
+				GCC_PREFIX_HEADER = "${SRCROOT}/BaseAnimationView/ProjectPrefixHeader.pch";
 				INFOPLIST_FILE = BaseAnimationView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

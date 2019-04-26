@@ -12,7 +12,7 @@
 
 #import "ViewController.h"
 #import "BaseAnimationView.h"
-
+#import "SpringAnimationView.h"
 
 
 @interface ViewController ()
@@ -23,8 +23,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /*
     BaseAnimationView *animationView = [[BaseAnimationView alloc]init];
     [self.view addSubview:animationView];
+     */
+    
+    SpringAnimationView *springAnimationView = [[SpringAnimationView alloc]init];
+    [self.view addSubview:springAnimationView];
+    
 }
 
 
