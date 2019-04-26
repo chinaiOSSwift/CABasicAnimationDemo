@@ -159,7 +159,7 @@
     springAnimation.duration = 2;
     springAnimation.repeatCount = 1;
     /* animation remove from view after animation finish */
-    springAnimation.removedOnCompletion = YES;
+    springAnimation.removedOnCompletion = true;
     /*
      只有当removedOnCompletion设置为no时，fillmode设置为kCAFillModeBoth或者kCAFillModeForwards才有效，
      kCAFillModeRemoved //动画执行完成后回到初始状态
@@ -167,11 +167,11 @@
      kCAFillModeForwards //动画执行完成后保留最后状态
      kCAFillModeBoth //动画执行完成后保留最后状态
      */
-    springAnimation.fillMode = kCAFillModeForwards;
+    springAnimation.fillMode = kCAFillModeRemoved;
     /*
      动画执行完成后按原动画返回执行，default no
      */
-    //    springAnimation.autoreverses = YES;
+    //springAnimation.autoreverses = YES;
     return springAnimation;
 }
 - (void)initData{
